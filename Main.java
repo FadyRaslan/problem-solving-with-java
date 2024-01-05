@@ -6,14 +6,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int num =scanner.nextInt();
-        if (num<=2){
-            System.out.println("No");
-            return;
+        int result=1;
+        for (int i=1;i<=num;i++){
+            result*=i;
         }
-        if (num%2==0){
+        if (result%2==0){
             System.out.println("Yes");
         }else {
-            System.out.println("No");
+            System.out.println("NO");
         }
     }
+
 }
